@@ -14,7 +14,7 @@ type Logger struct {
 }
 
 // New Logger creates a new Logger that can be used easily
-func (l Logger) NewLogger() *Logger {
+func NewLogger() *Logger {
 
 	handler := slog.NewJSONHandler(os.Stdout, nil)
 
